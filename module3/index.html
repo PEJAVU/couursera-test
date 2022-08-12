@@ -1,146 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>David Chu's China Bistro</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-  </head>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
 <body>
-  <header>
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
-            <div id="logo-img" alt="Logo image"></div>
-          </a>
 
-          <div class="navbar-brand">
-            <a href="index.html"><h1>David Chu's China Bistro</h1></a>
-            <h6>
-              <img src="images/star-k-logo.png" alt="Kosher certification">
-              <span>Kosher Certified</span>
-            </h6>
-          </div>
-
-          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        
-        <div id="collapsable-nav" class="collapse navbar-collapse">
-           <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li id="navHomeButton" class="visible-xs active">
-              <a href="index.html">
-                <span class="glyphicon glyphicon-home"></span> Home</a>
-            </li>
-            <li id="navMenuButton">
-              <a href="#" onclick="$dc.loadMenuCategories();">
-                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
-            </li>
-            <li id="phone" class="hidden-xs">
-              <a href="tel:410-602-5008">
-                <span>410-602-5008</span></a><div>* We Deliver</div>
-            </li>
-
-          </ul><!-- #nav-list -->
-        </div><!-- .collapse .navbar-collapse -->
-      </div><!-- .container -->
-    </nav><!-- #header-nav -->
-  </header>
-
-<div class="row">
-    <div class="col-lg-4 col-md-6 col-sm-12" id="container">
-            <p id="p1">Chicken</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-
-
-    <div class="col-lg-4 col-md-6 col-sm-12" id="container">
-            <p id="p2">Sushi</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-
-
-      </div>    <div class="col-lg-4 col-md-6 col-sm-12" id="container">
-              <p id="p3">Beef</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-      </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" >Food, LLC</a>
     </div>
-
-
-  <div id="call-btn" class="visible-xs">
-    <a class="btn" href="tel:410-602-5008">
-    <span class="glyphicon glyphicon-earphone"></span>
-    410-602-5008
-    </a>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    
+      <ul class="nav navbar-nav navbar-right" >
+        <li style>
+        <a href="#" > 
+        <span class="glyphicon glyphicon-cutlery"></span> chicken</a>
+        </li>
+        <li>
+        <a href="#" >
+        <span class="glyphicon glyphicon-info-sign"></span> beef</a>
+        </li>
+        <li>
+        <a href="#">
+        <span class="glyphicon glyphicon-certificate"></span> sushi</a>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+</nav>
+<br>
+<br>  
+<h1>Our Menu</h1>
 
-  <div id="main-content" class="container"></div>
 
-  <footer class="panel-footer">
-    <div class="container">
-      <div class="row">
-        <section id="hours" class="col-sm-4">
-          <span>Hours:</span><br>
-          Sun-Thurs: 11:15am - 10:00pm<br>
-          Fri: 11:15am - 2:30pm<br>
-          Saturday Closed
-          <hr class="visible-xs">
-        </section>
-        <section id="address" class="col-sm-4">
-          <span>Address:</span><br>
-          7105 Reisterstown Road<br>
-          Baltimore, MD 21215
-          <h6>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</h6>
-          <hr class="visible-xs">
-        </section>
-        <section id="testimonials" class="col-sm-4">
-          <h6>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</h6>
-          <h6>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</h6>
-        </section>
-      </div>
-      <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
-    </div>
-  </footer>
+<div id="main-content" class="container">
+  <div id="home-tiles" class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+            
+          <h2>Chicken</h2>  
+<p>This Short Story The Donkey and The Horse is quite interesting to all the people. Enjoy reading this story.
 
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/ajax-utils.js"></script>
-  <script src="js/script.js"></script>
+Once, there lived a washer man named Bheema. He had a donkey and a horse. The donkey carried clothes to the pond and back to his house. The horse carried Bheema to the market and back, occasionally. The donkey worked much harder than the horse.
+
+On a bright sunny day, Bheema was going to the pond with donkey. He took the horse along to give it a drink of water. The donkey was carrying a heavy load of clothes. The horse was carrying nothing. The load was unusually heavy and the donkey�s back was hurting.</p>
+
+</div>
+</div>
+
 </body>
 </html>
